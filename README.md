@@ -1,14 +1,6 @@
 <h1 align="center">
-    <a href="http://demos.krajee.com" title="Krajee Demos" target="_blank">
-        <img src="http://kartik-v.github.io/bootstrap-fileinput-samples/samples/krajee-logo-b.png" alt="Krajee Logo"/>
-    </a>
-    <br>
     yii2-widget-datetimepicker
     <hr>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTP3NZQ6G2AYU"
-       title="Donate via Paypal" target="_blank"><img height="90" src="https://kartik-v.github.io/bootstrap-fileinput-samples/samples/donate.png" alt="Donate"/></a>
-    &nbsp; &nbsp; &nbsp;
-    <a href="https://www.buymeacoffee.com/kartikv" title="Buy me a coffee" ><img align="top" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" align="top" height="50" alt="kartikv" style="margin-top:15px"/></a>
 </h1>
 
 <div align="center">

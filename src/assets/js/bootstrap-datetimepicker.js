@@ -642,6 +642,18 @@
                 left = bodyWidth - 220;
             }
 
+            /**
+             * Special exception if picker goes outside the visible window -
+             * align the container to the top of target element
+             */
+            if (offset.top + this.component.outerHeight() + this.picker.outerHeight() > $(window).height()
+                && offset.top > this.picker.outerHeight()
+            ) {
+                this.pickerPosition = 'top-right';
+            }  else {
+                this.pickerPosition = 'bottom-right';
+            }
+
             if (this.pickerPosition === 'top-left' || this.pickerPosition === 'top-right') {
                 top = offset.top - this.picker.outerHeight();
             } else {
