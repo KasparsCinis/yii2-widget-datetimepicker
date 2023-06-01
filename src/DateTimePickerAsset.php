@@ -7,7 +7,7 @@
  * @version 1.5.1
  */
 
-namespace kasparscinis\datetime;
+namespace kasparscinis\datetimepicker;
 
 use kartik\base\AssetBundle;
 
