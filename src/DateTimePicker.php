@@ -7,7 +7,7 @@
  * @version 1.5.1
  */
 
-namespace kartik\datetime;
+namespace kasparscinis\datetime;
 
 use Exception;
 use kartik\base\InputWidget;
