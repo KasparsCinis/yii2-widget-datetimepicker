@@ -616,7 +616,7 @@
                 this.zIndex = index_highest + 10;
             }
 
-            var offset, top, left, containerOffset;
+            var offset, top, left, containerOffset, outerHeight;
             if (this.container instanceof $) {
                 containerOffset = this.container.offset();
             } else {
@@ -625,12 +625,14 @@
 
             if (this.component) {
                 offset = this.component.offset();
+                outerHeight = this.component.outerHeight();
                 left = offset.left;
                 if (this.pickerPosition === 'bottom-left' || this.pickerPosition === 'top-left') {
                     left += this.component.outerWidth() - this.picker.outerWidth();
                 }
             } else {
                 offset = this.element.offset();
+                outerHeight = this.element.outerHeight();
                 left = offset.left;
                 if (this.pickerPosition === 'bottom-left' || this.pickerPosition === 'top-left') {
                     left += this.element.outerWidth() - this.picker.outerWidth();
@@ -646,7 +648,7 @@
              * Special exception if picker goes outside the visible window -
              * align the container to the top of target element
              */
-            if (offset.top + this.component.outerHeight() + this.picker.outerHeight() > $(window).height()
+            if (offset.top + outerHeight + this.picker.outerHeight() > $(window).height()
                 && offset.top > this.picker.outerHeight()
             ) {
                 this.pickerPosition = 'top-right';
