@@ -652,9 +652,7 @@
                 && offset.top > this.picker.outerHeight()
             ) {
                 this.pickerPosition = 'top-right';
-            }  else {
-                this.pickerPosition = 'bottom-right';
-            }
+            } 
 
             if (this.pickerPosition === 'top-left' || this.pickerPosition === 'top-right') {
                 top = offset.top - this.picker.outerHeight();
